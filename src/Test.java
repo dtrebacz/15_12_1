@@ -1,16 +1,24 @@
-import java.awt.*;
-
+import pl.edu.wszib.podyplomowe.PackagePresenter;
 
 public class Test {
 
     public static void main(String[] args) {
+
+        pl.edu.wszib.java.PackagePresenter javaPackagePresenter
+                = new  pl.edu.wszib.java.PackagePresenter();
+
+       PackagePresenter podyplomowePackagePresenter
+                = new  PackagePresenter();
+
         System.out.println();
-        Color color = new Color(5,2,3);
-        Point point;
+        javaPackagePresenter.showPackage();
+        System.out.println();
+        podyplomowePackagePresenter.showPackage();
+        System.out.println();
 
-        System.out.println(color);
+        Test test = new Test();
 
-
+        System.out.println("Pakiet klasy test: " + test.getClass().getPackage());
 
 
     }
