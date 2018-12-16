@@ -10,8 +10,16 @@ public class MusicPlayerTest {
 
         MusicPlayer cd = new CD_Player("Player 2");
         cd.show();
+
+
+        cd.loadPlaylist();
         cd.play();
-        cd.pause();
+
+        cd.next();
+
+        cd.next();
+        cd.prev();
+
 
 
 

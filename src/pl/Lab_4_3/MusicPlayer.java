@@ -4,7 +4,7 @@ abstract class MusicPlayer implements Player{
     private String name = new String();
     private String song = new String();
     private String status = new String();
-    private int SongNr;
+    public int SongNr;
 
     public int getSongNr() {
         return SongNr;
@@ -40,28 +40,7 @@ abstract class MusicPlayer implements Player{
 
   abstract void show();
 
-    @Override
-    public void play() {
 
-        setStatus("Playing");
-        show();
-
-    }
-
-    @Override
-    public void pause() {
-
-        setStatus("Paused");
-        show();
-    }
-
-    @Override
-    public void stop() {
-
-        setStatus("Stoped");
-        show();
-
-    }
 
 
 
