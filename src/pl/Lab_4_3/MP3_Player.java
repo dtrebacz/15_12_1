@@ -35,7 +35,7 @@ Song[] playlist =new Song[5];
             setSongNr(0);
         } ;
         if (getSongNr() < 0) {
-            setSongNr(playlist.length);
+            setSongNr(playlist.length-1);
         } ;
     }
 //-------------------------

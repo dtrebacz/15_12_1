@@ -20,7 +20,7 @@ public class CD_Player extends MusicPlayer {
 
     @Override
     void show() {
-        System.out.println("MP3 Music player ");
+        System.out.println("CD Music player ");
         System.out.println("---------------------------------------");
         System.out.println(this);
 
@@ -34,7 +34,7 @@ public class CD_Player extends MusicPlayer {
             setSongNr(0);
         } ;
         if (getSongNr() < 0) {
-            setSongNr(playlist.length);
+            setSongNr(playlist.length-1);
         } ;
     }
 //-----------------------------------------------------
