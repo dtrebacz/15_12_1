@@ -12,7 +12,10 @@ public class Lab_4_2 {
         while (!los.equals(LosWygrany)) {
             los.Losuj();
             System.out.println(los.lp + " " +los);
+
             }
+        System.out.println("$$$$$$$$ jackPot !!!!! $$$$$$$$");
+        System.out.println("w "+los.lp + " próbie");
 
    }
 }
