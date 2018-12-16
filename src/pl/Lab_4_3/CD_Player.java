@@ -28,14 +28,14 @@ public class CD_Player extends MusicPlayer {
 
     @Override
     void setSongNr(int sn) {
-        SongNr = sn;
 
-        if (getSongNr() > playlist.length) {
+        if (sn> playlist.length) {
             setSongNr(0);
         } ;
-        if (getSongNr() < 0) {
+        if (sn < 0) {
             setSongNr(playlist.length-1);
         } ;
+        SongNr = sn;
     }
 //-----------------------------------------------------
 @Override

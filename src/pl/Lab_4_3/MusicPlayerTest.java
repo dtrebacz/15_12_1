@@ -24,14 +24,13 @@ public class MusicPlayerTest {
 
 
 
-        mp3.next();
-        mp3.next();
-        mp3.next();
-        mp3.play();
-        mp3.next();
-        mp3.next();
-        mp3.next();
-        mp3.prev();
+//
+            mp3.play();
+          mp3.next();
+//        mp3.next();
+//        mp3.next();
+//        mp3.play();
+            mp3.pause();
 
 
 

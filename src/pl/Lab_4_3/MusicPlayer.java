@@ -2,7 +2,6 @@ package pl.Lab_4_3;
 
 abstract class MusicPlayer implements Player{
     private String name = new String();
-    private String song = new String();
     private String status = new String();
     public int SongNr;
 
@@ -20,15 +19,7 @@ abstract class MusicPlayer implements Player{
         this.name = name;
     }
 
-    public final String getSong() {
-        return song;
-    }
-
-    public final void setSong(String song) {
-        this.song = song;
-    }
-
-    public final String getStatus() {
+   public final String getStatus() {
         return status;
     }
 
@@ -48,8 +39,7 @@ abstract class MusicPlayer implements Player{
     public String toString() {
         return "MusicPlayer{" +
                 "name='" + name + '\'' +
-                ", song='" + song + '\'' +
-                ", status='" + status + '\'' +
+                               ", status='" + status + '\'' +
                 ", Song nr='" + getSongNr() + '\'' +
                 '}';
     }

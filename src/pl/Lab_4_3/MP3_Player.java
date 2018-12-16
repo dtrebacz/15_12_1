@@ -29,14 +29,15 @@ Song[] playlist =new Song[5];
     @Override
     void setSongNr(int sn) {
 
-       SongNr = sn;
 
-        if (getSongNr() > playlist.length) {
+        if (sn > playlist.length) {
             setSongNr(0);
         } ;
-        if (getSongNr() < 0) {
+        if (sn < 0) {
             setSongNr(playlist.length-1);
         } ;
+
+        SongNr = sn;
     }
 //-------------------------
 @Override
@@ -51,7 +52,7 @@ public void play() {
     @Override
     public void pause() {
 
-        setStatus("Paused");
+        this.setStatus("Paused");
         show();
         System.out.println(playlist[getSongNr()]);
     }
@@ -59,7 +60,7 @@ public void play() {
     @Override
     public void stop() {
 
-        setStatus("Stoped");
+        this.setStatus("Stoped");
         show();
         System.out.println(playlist[getSongNr()]);
 
