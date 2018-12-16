@@ -3,7 +3,7 @@ package pl.Lab_4_3;
 abstract class MusicPlayer implements Player{
     private String name = new String();
     private String status = new String();
-    public int SongNr;
+    public int SongNr =1;
 
     public int getSongNr() {
         return SongNr;

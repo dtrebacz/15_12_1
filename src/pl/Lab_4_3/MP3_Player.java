@@ -20,9 +20,11 @@ Song[] playlist =new Song[5];
 
     @Override
     void show() {
+        System.out.println();
         System.out.println("MP3 Music player ");
         System.out.println("---------------------------------------");
         System.out.println(this);
+
 
     }
 
@@ -31,10 +33,10 @@ Song[] playlist =new Song[5];
 
 
         if (sn > playlist.length) {
-            setSongNr(0);
+            SongNr = 0;
         } ;
         if (sn < 0) {
-            setSongNr(playlist.length-1);
+            SongNr =playlist.length-1;
         } ;
 
         SongNr = sn;
@@ -45,7 +47,7 @@ public void play() {
 
     setStatus("Playing");
     show();
-    System.out.println(playlist[getSongNr()]);
+    System.out.println(playlist[SongNr]);
 
 }
 
@@ -54,7 +56,7 @@ public void play() {
 
         this.setStatus("Paused");
         show();
-        System.out.println(playlist[getSongNr()]);
+        System.out.println(playlist[SongNr]);
     }
 
     @Override
@@ -62,7 +64,7 @@ public void play() {
 
         this.setStatus("Stoped");
         show();
-        System.out.println(playlist[getSongNr()]);
+        System.out.println(playlist[SongNr]);
 
     }
 
@@ -71,7 +73,7 @@ public void play() {
 
         setSongNr(getSongNr() + 1);
         show();
-        System.out.println(playlist[getSongNr()]);
+        System.out.println(playlist[SongNr]);
     }
 
     @Override
@@ -80,7 +82,7 @@ public void play() {
 
 
         show();
-        System.out.println(playlist[getSongNr()]);
+        System.out.println(playlist[SongNr]);
     }
 
     @Override
@@ -92,9 +94,11 @@ public void play() {
         playlist[3] = new Song("Artist3","Title3","MP3Album3");
         playlist[4] = new Song("Artist4","Title4","MP3Album4");
 
-
-        for (int i = 0; i < playlist.length; i++) {
-            System.out.println(playlist[i].getArtist());
+        System.out.println();
+        System.out.println("Loading MP3 playlist");
+        System.out.println("-------------------------------------------------");
+        for (int i = 0; i < playlist.length-1; i++) {
+            System.out.println(playlist[i]);
 
         }
 }
